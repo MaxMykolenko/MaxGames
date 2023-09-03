@@ -1,7 +1,3 @@
-ol{
-    font-weight: bold;
-}
-
 html, body {
     width: 99%;
     height:98%;
@@ -92,4 +88,9 @@ html, body {
 #Name{
 	font-size: 35px;
 
+}
+
+#Text{
+    font-size: 20px;
+    color:#000000;
 }
