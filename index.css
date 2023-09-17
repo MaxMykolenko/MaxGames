@@ -1,15 +1,15 @@
 /*background*/
 html, body {
     width: 99%;
-    height:98%;
+    height:99%;
   }
   
-  body {
+ body {
       background: linear-gradient(-45deg, #FF6800, #7F00FD, #0055FF, #FF0000);
       background-size: 400% 400%;
       animation: gradient 20s ease infinite;
   }
-  
+
   @keyframes gradient {
       0% {
           background-position: 0% 50%;
@@ -21,11 +21,6 @@ html, body {
           background-position: 0% 50%;
       }
   }
-  body{
-      /*background-image:url(files/background.png);*/
-      background-color: #B4AF00;
-  }
-
 
   @import url('https://fonts.googleapis.com/css?family=Arimo');
 .top-menu {
