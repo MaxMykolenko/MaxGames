@@ -1,3 +1,6 @@
+body{
+min-height: auto;
+}
 /*background*/
 html, body {
     width: 99%;
@@ -103,15 +106,13 @@ html, body {
     padding: 20px;
 }
 
-/* Очищення float для батьківського контейнера */
-.clearfix::after {
-    content: "";
-    clear: both;
-    display: table;
-}
 /* Стилі для тексту */
 .right-block p {
      font-size: 25px; /* Розмір шрифту тексту */
      color: #000000; /* Колір тексту */
      margin-top: 10px; /* Зовнішній відступ зверху */
+}
+/*footer*/
+.footer{
+  margin-top: auto;
 }
