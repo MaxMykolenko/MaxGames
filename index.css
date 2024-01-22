@@ -8,8 +8,8 @@ html, body {
   }
   
  body {
-      background: linear-gradient(-45deg, #FF6800, #7F00FD, #0055FF, #FF0000);
-      background-size: 400% 400%;
+      background: linear-gradient(-45deg, #0050c9, #1c0069);
+      background-size: 1000% 300%;
       animation: gradient 20s ease infinite;
   }
 
