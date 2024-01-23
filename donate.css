@@ -4,26 +4,21 @@ html, body {
   }
   
   body {
-    background: linear-gradient(-45deg, #0050c9, #1c0069);
-    background-size: 1000% 300%;
-    animation: gradient 20s ease infinite;
+    background: linear-gradient(45deg, #015be2, #3700cf);
+    background-size: 200% 200%;
 }
-  
-  @keyframes gradient {
-      0% {
-          background-position: 0% 50%;
-      }
-      50% {
-          background-position: 100% 50%;
-      }
-      100% {
-          background-position: 0% 50%;
-      }
-  }
-  body{
-      /*background-image:url(files/background.png);*/
-      background-color: #B4AF00;
-  }
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
 
 
   @import url('https://fonts.googleapis.com/css?family=Arimo');
@@ -62,7 +57,7 @@ html, body {
   content: "";
   width: 9px;
   height: 9px;
-  background: #af85fc;
+  background: #00a2ff;
   position: absolute;
   left: 50%;
   transform: rotate(45deg) translateX(6.5px);
@@ -93,4 +88,10 @@ html, body {
 #Text{
     font-size: 20px;
     color:#000000;
+    font-weight: bold;
+}
+#Text1{
+  font-size: 20px;
+  color:#000000;
+  font-weight: bold;
 }
