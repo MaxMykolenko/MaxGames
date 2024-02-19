@@ -1,3 +1,2 @@
-NoobGames
-You can donate here: https://maks-creater.github.io/NoobGames/donate.html
-Thanx if you donate :)
+Max Games
+You can download here our games: https://maksnoob.github.io/MaxGames/
