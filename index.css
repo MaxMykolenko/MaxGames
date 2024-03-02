@@ -1,49 +1,63 @@
-body{
-min-height: auto;
+/* Загальні стилі */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arimo', sans-serif;
+  background: linear-gradient(45deg, #015be2, #3700cf);
+  background-size: 200% 200%;
 }
-/*background*/
-html, body {
-    width: 99%;
-    height:99%;
-  }
-  
- body {
-      background: linear-gradient(45deg, #015be2, #3700cf);
-      background-size: 200% 200%;
-  }
 
-  @keyframes gradient {
-      0% {
-          background-position: 0% 50%;
-      }
-      50% {
-          background-position: 100% 50%;
-      }
-      100% {
-          background-position: 0% 50%;
-      }
-  }
+.container {
+  display: flex;
+}
 
-  @import url('https://fonts.googleapis.com/css?family=Arimo');
+.left-block {
+  width: 50%;
+  padding: 20px;
+}
+
+.right-block {
+  width: 50%;
+  padding: 20px;
+}
+
+/* Стилі для тексту */
+.right-block p {
+  font-size: 25px; /* Розмір шрифту тексту */
+  color: #000000; /* Колір тексту */
+  margin-top: 10px; /* Зовнішній відступ зверху */
+}
+
+/* Стилі для верхнього меню */
 .top-menu {
   background: rgba(94, 94, 94, 0.137);
   box-shadow: 3px 0 7px rgba(0,0,0,.3);
   padding: 20px;
 }
+
 .top-menu:after {
   content: "";
   display: table;
   clear: both;
 }
-.navbar-logo {display: inline-block;}
+
+.navbar-logo {
+  display: inline-block;
+  font-size: 35px;
+}
+
 .menu-main {
   list-style: none;
   margin: 0;
   padding: 0;
   float: right;
 }
-.menu-main li {display: inline-block;}
-.menu-main a{
+
+.menu-main li {
+  display: inline-block;
+}
+
+.menu-main a {
   text-decoration: none;
   display: block;
   position: relative;
@@ -56,6 +70,7 @@ html, body {
   color: #000000;
   transition:.3s linear;
 }
+
 .menu-main a::before {
   content: "";
   width: 9px;
@@ -67,51 +82,46 @@ html, body {
   opacity: 0;
   transition: .3s linear;
 }
-.menu-main a:hover:before {opacity: 1;}
+
+.menu-main a:hover:before {
+  opacity: 1;
+}
+
+/* Адаптація для малих екранів */
 @media (max-width: 660px) {
-.menu-main {
-  float: none;
-  padding-top: 20px;
+  .menu-main {
+      float: none;
+      padding-top: 20px;
+  }
+
+  .top-menu {
+      text-align: center;
+      padding: 20px 0 0 0;
+  }
+
+  .menu-main a {
+      padding: 0 10px;
+  }
+
+  .menu-main a:before {
+      transform: rotate(45deg) translateX(-6px);
+  }
 }
-.top-menu {
-  text-align: center;
-  padding: 20px 0 0 0;
-}
-.menu-main a {padding: 0 10px;}
-.menu-main a:before {transform: rotate(45deg) translateX(-6px);}
-}
+
 @media (max-width: 600px) {
-.menu-main li {display: block;}
-}
-#Name{
-	font-size: 35px;
-
-}
-/* div where Games and News*/
-
- /* Стилі для першого блоку (лівого) */
- .left-block {
-    float: left; /* Вирівнювання зліва */
-    width: 40%; /* Половина ширини батьківського контейнера */
-    /*background-color: #e09696;*/
-    padding: 20px;
+  .menu-main li {
+      display: block;
+  }
 }
 
-/* Стилі для другого блоку (правого) */
-.right-block {
-    float: right; /* Вирівнювання справа */
-    width: 40%; /* Половина ширини батьківського контейнера */
-   /* background-color: #e09696;*/
-    padding: 20px;
-}
+/* Стилі для блоків на мобільних пристроях */
+@media (max-width: 600px) {
+  .container {
+    flex-direction: column; /* Зміна напрямку розміщення елементів на вертикальний */
+  }
 
-/* Стилі для тексту */
-.right-block p {
-     font-size: 25px; /* Розмір шрифту тексту */
-     color: #000000; /* Колір тексту */
-     margin-top: 10px; /* Зовнішній відступ зверху */
-}
-/*footer*/
-.footer{
-  margin-top: auto;
+  .left-block,
+  .right-block {
+    width: 100%; /* Повна ширина для блоків на мобільних пристроях */
+  }
 }
