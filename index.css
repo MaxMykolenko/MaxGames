@@ -14,6 +14,7 @@ body {
 .left-block {
   width: 50%;
   padding: 20px;
+
 }
 
 .right-block {
@@ -111,17 +112,5 @@ body {
 @media (max-width: 600px) {
   .menu-main li {
       display: block;
-  }
-}
-
-/* Стилі для блоків на мобільних пристроях */
-@media (max-width: 600px) {
-  .container {
-    flex-direction: column; /* Зміна напрямку розміщення елементів на вертикальний */
-  }
-
-  .left-block,
-  .right-block {
-    width: 100%; /* Повна ширина для блоків на мобільних пристроях */
   }
 }
