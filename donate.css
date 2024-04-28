@@ -4,8 +4,7 @@ html, body {
   }
   
   body {
-    background: linear-gradient(45deg, #015be2, #3700cf);
-    background-size: 200% 200%;
+    background: rgb(0, 0, 0);
 }
 
 @keyframes gradient {
@@ -32,7 +31,10 @@ html, body {
   display: table;
   clear: both;
 }
-.navbar-logo {display: inline-block;}
+.navbar-logo {
+  display: inline-block;
+  color:yellow;
+}
 .menu-main {
   list-style: none;
   margin: 0;
@@ -50,7 +52,7 @@ html, body {
   letter-spacing: 2px;
   font-family: 'Arimo', sans-serif;
   font-weight: bold;
-  color: #000000;
+  color: yellow;
   transition:.3s linear;
 }
 .menu-main a::before {
@@ -87,11 +89,11 @@ html, body {
 
 #Text{
     font-size: 20px;
-    color:#000000;
+    color:yellow;
     font-weight: bold;
 }
 #Text1{
   font-size: 20px;
-  color:#000000;
+  color:yellow;
   font-weight: bold;
 }

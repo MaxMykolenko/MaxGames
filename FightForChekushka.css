@@ -5,7 +5,7 @@ html,body{
     margin: 0;
     padding: 0;
     font-family: 'Arimo', sans-serif;
-    background: linear-gradient(45deg, #015be2, #3700cf);
+    background: rgb(0, 0, 0);
     background-size: 200% 200%;
 }
 
@@ -35,7 +35,7 @@ html,body{
 }
 
 #About1 {
-    background-color: #aae3ff4f;
+    color: yellow;
 }
 
 #Div1 {
@@ -52,7 +52,7 @@ html,body{
 }
 
 #About {
-    background-color: #aae3ff4f;
+    color: yellow;
     font-size: 25px;
 }
 
@@ -118,6 +118,7 @@ html,body{
   .navbar-logo {
     display: inline-block;
     font-size: 35px;
+    color: yellow;
   }
   
   .menu-main {
@@ -141,7 +142,7 @@ html,body{
     letter-spacing: 2px;
     font-family: 'Arimo', sans-serif;
     font-weight: bold;
-    color: #000000;
+    color: yellow;
     transition:.3s linear;
   }
   
@@ -159,7 +160,7 @@ html,body{
   
   .menu-main a:hover:before {
     opacity: 1;
-  }
+  }  
   
   /* Адаптація для малих екранів */
   @media (max-width: 660px) {
