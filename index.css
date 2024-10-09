@@ -14,15 +14,15 @@ body {
 
 #background-video {
   position: fixed;
-  right: 1;
+  right: 0;
+  left: 0;
   bottom: 0;
   min-width: 100%;
   min-height: 100%;
-  max-width: 100%;
-  max-height: 100%;
   z-index: -1;
   object-fit: cover;
 }
+
 
 a{
   font-size: 20px;
@@ -135,16 +135,16 @@ a{
 }
 
 footer {
-  position: fixed;  /* Фіксуємо футер внизу */
+  position: fixed;
   bottom: 0;
   left: 0;
   right: 0;
   display: flex;
-  justify-content: center; /* Вирівнюємо по горизонталі */
-  align-items: center; /* Вирівнюємо по вертикалі */
+  justify-content: center;
+  align-items: center;
   color: #cacbc7;
   padding: calc(var(--sizeindex) * 1.4);
   background: linear-gradient(rgba(0, 0, 253, 0), rgba(255, 255, 255, 0.039));
-  text-align: center; /* Центруємо текст */
+  text-align: center;
+  z-index: 1;
 }
-
